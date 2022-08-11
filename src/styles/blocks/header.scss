@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  background: #e8e4e4;
+
+  &__marquee {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 15s linear infinite;
+    background: rgb(70, 89, 166);
+    background: linear-gradient(
+      63deg,
+      rgba(70, 89, 166, 1) 11%,
+      rgba(179, 71, 200, 0.5354735644257703) 60%,
+      rgba(0, 212, 255, 1) 86%,
+      rgba(162, 217, 140, 1) 93%,
+      rgba(79, 226, 93, 1) 100%
+    );
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: pre;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes marquee {
+      0% {
+        text-indent: 70em;
+      }
+      100% {
+        text-indent: -65em;
+      }
+    }
+
+    &--none {
+      display: none;
+    }
+  }
+}

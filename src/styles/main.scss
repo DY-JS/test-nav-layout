@@ -1,0 +1,21 @@
+@import './blocks/reset.scss';
+@import './blocks/normalize.scss';
+@import './blocks/icon';
+@import './blocks/header.scss';
+@import './blocks/nav.scss';
+@import './blocks/main-block.scss';
+@import './blocks/footer.scss';
+@import './mixins.scss';
+
+body,
+html {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+  scroll-behavior: smooth;
+}
+
+nav--open body {
+  overflow: hidden;
+}
